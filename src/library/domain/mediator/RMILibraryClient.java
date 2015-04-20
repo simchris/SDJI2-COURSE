@@ -1,16 +1,17 @@
 package library.domain.mediator;
 
-import java.rmi.server.UnicastRemoteObject;
-
 import library.domain.model.AbstractBookInfo;
 import library.domain.model.Book;
 import library.domain.model.User;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
 public class RMILibraryClient extends UnicastRemoteObject implements IRemoteLibrary {
 
 	private IRemoteLibrary iRemoteLibrary;
 
-	public RMILibraryClient() {
+	public RMILibraryClient() throws RemoteException {
 
 	}
 

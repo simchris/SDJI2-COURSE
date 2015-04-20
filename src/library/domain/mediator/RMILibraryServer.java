@@ -1,17 +1,16 @@
 package library.domain.mediator;
 
-import RemoteTaskList;
-import TaskServer;
+
+
+import library.domain.model.AbstractBookInfo;
+import library.domain.model.Book;
+import library.domain.model.User;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-
-import library.domain.model.AbstractBookInfo;
-import library.domain.model.Book;
-import library.domain.model.User;
 
 public class RMILibraryServer extends UnicastRemoteObject implements IRemoteLibrary {
 
